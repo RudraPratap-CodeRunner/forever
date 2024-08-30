@@ -67,7 +67,7 @@ const Collection = () => {
   return (
     <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
       {/* {filter options } */}
-      <div className='min-w-60'>
+      <div className='min-w-40'>
         <p onClick={()=>setShowFilter(!showFilter)} className='my-2 text-xl flex items-center cursor-pointer gap-2'>FILTER
           <img className={`h-3 sm:hidden ${showFilter ? 'rotate-90':''}`} src={assets.dropdown_icon} alt="" />
         </p>
@@ -106,7 +106,7 @@ const Collection = () => {
       <div className='flex-1'>
         <div className='flex justify-between text-base sm:text-2xl mb-4'>
           <Title text1={'ALL'} text2={'COLLECTIONS'} />
-          <select onChange={(e)=>setSortType(e.target.value)}  className="cursor-pointer border-2 border-gray-300 text-sm px-2">
+          <select onChange={(e)=>setSortType(e.target.value)}  className="cursor-pointer border-2 border-gray-300 text-sm px-2 outline-none">
             <option value="relevent">Sort by: Relevant</option>
             <option value="low-high">Sort by: Low to High</option>
             <option value="high-low">Sort by: High to Low</option>
