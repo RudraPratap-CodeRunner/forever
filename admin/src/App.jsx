@@ -6,9 +6,11 @@ import Add from './pages/Add.jsx'
 import List from './pages/List'
 import Orders from './pages/Orders'
 import Login from './components/Login'
-export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+export const backendUrl = import.meta.env.VITE_BACKEND_URL;
+export const currency = "₹ "
 
 const App = () => {
   const [token,setToken] = useState(localStorage.getItem('token')?localStorage.getItem('token'):'');
