@@ -36,10 +36,7 @@ const Navbar = () => {
           <p>CONTACT</p>
           <hr className="w-11/12 border-none h-[1.5px] bg-gray-700 hidden" />
         </NavLink>
-        <a href="https://forever-admin-beryl.vercel.app" className="flex flex-col items-center gap-1">
-          <p>Admin</p>
-          <hr className="w-11/12 border-none h-[1.5px] bg-gray-700 hidden" />
-        </a>
+        
       </ul>
       <div className="flex items-center gap-6">
         <img onClick={()=>{setShowSearch(true);navigate('/collection')}} src={assets.search_icon} className="w-5 cursor-pointer" alt="" />
